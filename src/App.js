@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import Days from './components/Days';
 import './App.css';
+import Header from './components/Header';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-fuchsia-900 overflow-hidden">
+    
+        <title>Metaverse Challenge</title>
+        <link rel="icon" href="/favicon.ico" />
+    <Header />
+      <Days />
     </div>
-  );
+
+
+  )
 }
 
-export default App;
+
